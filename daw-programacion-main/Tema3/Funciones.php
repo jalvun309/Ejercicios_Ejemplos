@@ -12,7 +12,7 @@ function apertura($titulo="Por si aca"){
 function titulo($cadena){
     echo "<title>$cadena</title>\n";
 }
-//Ejercicio 1
+//Ejercicio 1.
 function cierre(){
     echo "</body>";
     echo "</html>";
