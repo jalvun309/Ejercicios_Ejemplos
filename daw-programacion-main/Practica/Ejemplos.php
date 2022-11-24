@@ -1,7 +1,7 @@
 <?php
 /*$fecha = "2019-11-17";
 $fec=New DateTime($fecha);*/
-
+/*
 $num=5;
 $flot=1.2;
 $strin="Buenas tardes\t";
@@ -27,4 +27,26 @@ function variables(int &$num, float &$flot, string &$strin, DateTime &$time, arr
 echo "Valores finales\n";
 variables($num,$flot,$strin,$time,$ite,$opc);
 echo date_format($time, 'Y-m-d H:i:s'."\n");
-echo "$num\n$flot\n$strin\n$ite[0]\n$opc";
+echo "$num\n$flot\n$strin\n$ite[0]\n$opc";*/
+
+function factorial($num){
+    if($num>1){
+        return $num*factorial($num-1);
+    }else{
+        return 1;
+    }
+}
+
+function potencia($base,$expo){
+    if($expo==1){
+        return $base;
+    }elseif($expo==0){
+        return 1;
+    }else{
+        return $base*potencia($base,$expo-1);
+    }
+}
+
+$nume=5;
+//echo "El factorial de $nume es: ".factorial(12);
+echo "La potencia de 5 a 2 es: ".potencia(5,3);
